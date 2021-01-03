@@ -1,0 +1,106 @@
+[
+   {
+      "id":1,
+      "name":"Web Design",
+      "slug":"web-design",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":2,
+      "name":"JavaScript",
+      "slug":"javascript",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":3,
+      "name":"HTML",
+      "slug":"html",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":4,
+      "name":"Education",
+      "slug":"education",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":5,
+      "name":"Freebies",
+      "slug":"freebies",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":6,
+      "name":"Tutorials",
+      "slug":"tutorials",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":7,
+      "name":"News",
+      "slug":"news",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":8,
+      "name":"Coronavirus",
+      "slug":"coronavirus",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":9,
+      "name":"Opinion",
+      "slug":"opinion",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":10,
+      "name":"Business",
+      "slug":"business",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":11,
+      "name":"Sports",
+      "slug":"sports",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":12,
+      "name":"Entertainment",
+      "slug":"entertainment",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   },
+   {
+      "id":13,
+      "name":"CSS",
+      "slug":"css",
+      "status":"1",
+      "created_at":"2020-04-22 10:15:35",
+      "updated_at":"2020-04-22 10:15:35"
+   }
+]
