@@ -8,6 +8,9 @@ import Footer from '../components/Footer';
 
 import { postDetailBySlug } from '../actions/post';
 
+import setMetaDetail from '../utils/setMetaDetail';
+import { metaDetails } from '../utils/metaDetails';
+
 class PostDetailContainer extends Component {
 	
     componentDidMount() {
@@ -15,6 +18,8 @@ class PostDetailContainer extends Component {
 		var path = window.location.pathname;
 		var pathitems = path.split("/");
 		var postslug = pathitems[2];
+		
+		setMetaDetail("MyBlog | " + postslug, "MyBlog | " + postslug, "MyBlog | " + postslug);
 		
 		this.props.dispatch(postDetailBySlug(postslug));
     }

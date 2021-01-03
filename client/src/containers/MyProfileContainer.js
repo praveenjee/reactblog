@@ -7,10 +7,18 @@ import Footer from '../components/Footer';
 
 import { fetchAccountInfo } from '../actions/profile';
 
+import setMetaDetail from '../utils/setMetaDetail';
+import { metaDetails } from '../utils/metaDetails';
+
 class MyProfileContainer extends Component {
 	
     componentDidMount() {
         window.scrollTo(0, 0);
+		const path = this.props.match.path.replace("/","");		
+		if(path === "account-info"){
+			 setMetaDetail(metaDetails.accountinfo.meta_title, metaDetails.accountinfo.meta_keyword, metaDetails.accountinfo.meta_description);
+		}
+		
 		this.props.dispatch(fetchAccountInfo());
     }
 

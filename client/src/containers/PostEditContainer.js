@@ -8,13 +8,21 @@ import Footer from '../components/Footer';
 
 import { getPostDetail } from '../actions/post';
 
+import setMetaDetail from '../utils/setMetaDetail';
+import { metaDetails } from '../utils/metaDetails';
+
 class PostEditContainer extends Component {
 	
     componentDidMount() {
         window.scrollTo(0, 0);
+		
 		var path = window.location.pathname;
 		var pathitems = path.split("/");
 		var postid = parseInt(pathitems[2]);
+		
+		if(pathitems[1] === "postedit"){
+			 setMetaDetail(metaDetails.postedit.meta_title, metaDetails.postedit.meta_keyword, metaDetails.postedit.meta_description);
+		}
 		
 		this.props.dispatch(getPostDetail(postid));
     }

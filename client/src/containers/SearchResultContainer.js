@@ -22,9 +22,10 @@ class SearchResultContainer extends Component {
         window.scrollTo(0, 0);
 		const keyword = this.props.match.url.replace("/search/",""); 
 		
-		const path = this.props.match.path.replace("/:slug","");		
-		if(path === "/search"){
-			 setMetaDetail(metaDetails.home.meta_title, metaDetails.home.meta_keyword, metaDetails.home.meta_description);
+		var path = window.location.pathname;
+		var pathitems = path.split("/");		
+		if(pathitems[1] === "search"){
+			 setMetaDetail(metaDetails.search.meta_title, metaDetails.search.meta_keyword, metaDetails.search.meta_description);
 		}		
 		this.props.dispatch(searchPost(keyword))
     }

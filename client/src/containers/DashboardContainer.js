@@ -9,10 +9,19 @@ import { connect } from 'react-redux';
 import { fetchAccountInfo } from '../actions/profile';
 import { fetchOtherInfo } from '../actions/dashboard';
 
+import setMetaDetail from '../utils/setMetaDetail';
+import { metaDetails } from '../utils/metaDetails';
+
 class DashboardContainer extends Component {
 	
     componentDidMount() {
         window.scrollTo(0, 0);
+		
+		const path = this.props.match.path.replace("/","");		
+		if(path === "dashboard"){
+			 setMetaDetail(metaDetails.dashboard.meta_title, metaDetails.dashboard.meta_keyword, metaDetails.dashboard.meta_description);
+		}
+		
 		this.props.dispatch(fetchAccountInfo());
 		this.props.dispatch(fetchOtherInfo());
     }
